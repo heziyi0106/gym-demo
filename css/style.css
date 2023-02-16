@@ -1,0 +1,175 @@
+body{
+    background-color: rgb(255, 254, 254);
+    font-family:新細明體, 標楷體, 微軟正黑體, sans-serif;
+}
+.title{              
+    /* margin: 12px;   */
+    /* padding: 24px 0px; */
+    color:#ffffff;
+    background-color: #191970;
+    font-family: 標楷體;
+    /* 1rem ==> 16px */
+    font-size: 2rem;
+    height: 4rem;   /* 64px */
+    border-radius: 0.8rem;  
+    /* 垂直置中 */
+    line-height: 72px;
+    /* 水平置中 */
+    text-align: center;
+}
+.text-1{
+    background-color: blanchedalmond;
+    margin: 6px 0px;
+    padding: 6px;
+    border: 2px solid salmon;
+    /* border-radius: 0.8rem; */
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+.text-2{
+    background-color: rgb(212, 173, 248);
+    border-radius: 6px;
+    padding: 6px;
+}
+.text-3{
+    background-color: rgb(33, 255, 33);
+    color:red;
+    font-size: 24px;
+    font-style: italic;
+    padding: 0px 12px;
+}
+.text-4{
+    text-align: left;
+    line-height: 28px;
+}
+
+.text-4 a{
+    background-color: crimson;
+    color: #ffffff;
+    padding: 3px;
+}
+
+.sub-title{
+    display: inline-block;
+    margin: 6px 0px;
+    background-color: #060657;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 標楷體;
+}
+
+#container{
+    width: 80%;
+    margin: 12px auto;
+    text-align: center;
+}
+
+ol{
+    text-align: left;                
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+ol li{
+    margin-left: 40px;                
+}
+
+ul a{
+    text-decoration: none;
+    line-height:36px;
+}
+ul a:hover{
+    color: greenyellow;
+}
+ul a:visited{
+    color: red;
+}
+ul a:active{
+    color: #060657;
+}
+
+#image{
+    background-color: burlywood;
+    padding: 6px;
+}
+
+#image img{
+    background-color: white;
+    padding: 3px;
+    width: 30%;
+}
+
+#main-table{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    height: 300px;
+    margin-top: 10px;
+}
+
+#main-table th{
+    background-color: darkorange;
+    color:#ffffff;
+}
+
+#main-table td{
+    background-color: aqua;
+    font-size: 15px;
+}
+
+#main-table td:first-child{
+    background-color: rgb(159, 64, 9);
+    color: aliceblue;
+}
+
+#main-table td:last-child{
+    background-color: rgb(174, 24, 129);
+}
+
+#main-table td:nth-child(even){
+    background-color: chartreuse;
+}
+
+#main-table td:nth-child(3){
+    background-color: rgb(87, 112, 62);
+}
+
+#video{
+    text-align: center;
+}
+
+form{
+    background-color:rgb(255, 144, 144);
+    padding: 12px 0;
+    margin: 6px;
+    border-radius: 12px;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+input,
+textarea,
+label {
+    font-size: 20px;
+    text-align: center;
+    margin: 6px;
+}
+
+button[type="submit"]{
+    background-color: greenyellow;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    border-style: none;
+}
+a{
+    display: inline-block;
+    margin: 10px;
+}

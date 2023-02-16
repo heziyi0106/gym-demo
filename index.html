@@ -4,135 +4,7 @@
         <meta charset="UTF-8">
         <!-- 這是顯示網頁的title -->
         <title>健身資訊網站</title>
-        <style>
-            body{
-                background-color: rgb(255, 254, 254);
-                font-family:新細明體, 標楷體, 微軟正黑體, sans-serif;
-            }
-            .title{              
-                /* margin: 12px;   */
-                /* padding: 24px 0px; */
-                color:#ffffff;
-                background-color: #191970;
-                font-family: 標楷體;
-                /* 1rem ==> 16px */
-                font-size: 2rem;
-                height: 4rem;   /* 64px */
-                border-radius: 0.8rem;  
-                /* 垂直置中 */
-                line-height: 72px;
-                /* 水平置中 */
-                text-align: center;
-            }
-            .text-1{
-                background-color: blanchedalmond;
-                margin: 6px 0px;
-                padding: 6px;
-                border: 2px solid salmon;
-                /* border-radius: 0.8rem; */
-                font-size: 16px;
-                line-height: 24px;
-                
-            }
-            .text-2{
-                background-color: rgb(212, 173, 248);
-                border-radius: 6px;
-                padding: 6px;
-            }
-            .text-3{
-                background-color: rgb(33, 255, 33);
-                color:red;
-                font-size: 24px;
-                font-style: italic;
-                padding: 0px 12px;
-            }
-            .sub-title{
-                margin: 6px 0px;
-                background-color: #060657;
-                color: white;
-                font-size: 1.5rem;
-                border-radius: 6px;
-                padding: 6px 12px;
-                font-family: 標楷體;
-            }
-
-            #container{
-                width: 80%;
-                margin: 12px auto;
-                text-align: center;
-            }
-
-            ol{
-                text-align: left;                
-            }
-
-            ul{
-                list-style: none;
-            }
-
-            li{
-                margin-left: 20px;                
-            }
-            
-            ul a{
-                text-decoration: none;
-                line-height:36px;
-            }
-            ul a:hover{
-                color: greenyellow;
-            }
-            ul a:visited{
-                color: red;
-            }
-            ul a:active{
-                color: #060657;
-            }
-
-            #image{
-                background-color: burlywood;
-                padding: 6px;
-            }
-
-            #image img{
-                background-color: white;
-                padding: 3px;
-                width: 30%;
-            }
-
-            #main-table{
-                width: 90%;
-                margin: 0 auto;
-                text-align: center;
-                height: 300px;
-                margin-top: 10px;
-            }
-
-            #main-table th{
-                background-color: darkorange;
-                color:#ffffff;
-            }
-
-            #main-table td{
-                background-color: aqua;
-            }
-
-            #main-table td:first-child{
-                background-color: rgb(159, 64, 9);
-                color: aliceblue;
-            }
-
-            #main-table td:last-child{
-                background-color: rgb(174, 24, 129);
-            }
-
-            #main-table td:nth-child(even){
-                background-color: chartreuse;
-            }
-
-            #main-table td:nth-child(3){
-                background-color: rgb(87, 112, 62);
-            }
-        </style>
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <div id="container">
@@ -230,24 +102,27 @@
                 </tbody>
             </table>
             
-            <p>
-            <a href="./bmi.html"><b>計算BMI:</b></a>&nbsp;&nbsp;一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。
-            <br>
-            <b>計算所需熱量:</b>&nbsp;&nbsp;因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
-            <br>
-            <b>力行健康體重管理:</b>&nbsp;&nbsp;多運動和健康吃，肥胖者每天減少攝取500大卡熱量；或減少攝食300大卡熱量，增加體能活動多消耗200大卡，就可以每周減重約0.5公斤。提醒您!控制體重時，每日熱量攝取不可低於1200大卡
+            <p class="text-2 text-4">
+                <a href="./bmi.html"><b>計算BMI:</b></a>&nbsp;&nbsp;一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。
+                <br>
+                <b>計算所需熱量:</b>&nbsp;&nbsp;因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
+                <br>
+                <!-- <b>力行健康體重管理:</b>&nbsp;&nbsp;多運動和健康吃，肥胖者每天減少攝取500大卡熱量；或減少攝食300大卡熱量，增加體能活動多消耗200大卡，就可以每周減重約0.5公斤。提醒您!控制體重時，每日熱量攝取不可低於1200大卡 -->
             </p>
             <hr>
             <div class="sub-title">健身影片</div>
-            <!-- <iframe width="45%" height="480" src="https://www.youtube.com/embed/Vb287LMSwlw" title="30分鐘爆汗燃脂+核心訓練│無須器材、無跳躍、不傷手腕│跟著我甩掉多餘體脂肪！30 Min Athome fat burn, no equipment needed, no jumping" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="45%" height="480" src="https://www.youtube.com/embed/MzLZXUnekuI" title="健身房新手【4天練全身課表】每天只做CP值最高的三個精華動作！│健人訓練│ 2021ep31" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-
+            <div id="video">
+                <iframe width="320px"src="https://www.youtube.com/embed/Vb287LMSwlw" title="30分鐘爆汗燃脂+核心訓練│無須器材、無跳躍、不傷手腕│跟著我甩掉多餘體脂肪！30 Min Athome fat burn, no equipment needed, no jumping" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="320px" src="https://www.youtube.com/embed/MzLZXUnekuI" title="健身房新手【4天練全身課表】每天只做CP值最高的三個精華動作！│健人訓練│ 2021ep31" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
             <!-- <video src="./video/SampleVideo_1280x720_10mb.mp4" controls width="100%">影片載入失敗</video> -->
             <hr>
             <div class="sub-title">填寫表單</div>
             <!-- GET/POST -->
-            需要更多資訊?免費索取健身資訊<br>
-            <b>前100名還贈送［我愛健身］書籍一本!</b>
+            <div class="text-1">
+                需要更多資訊?免費索取健身資訊<br>
+                <b>前100名還贈送［我愛健身］書籍一本!</b>
+            </div>
             <form action="">
                 <p>
                     <label for="email">EMAIL</label>
