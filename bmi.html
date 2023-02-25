@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-hant">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,37 +13,67 @@
             display: inline-block;
             background-color: dodgerblue;
         } */
-        form{
+        
+        #box {
+            background-color: tomato;
+            margin-top: 24px;
+            padding: 24px 0px;
+            border-radius: 12px;
+        }
+        
+        #box {
             width: 50%;
             margin: 24px auto;
         }
-        @media screen and (max-width:768px){
-            form{
+        
+        @media screen and (max-width:768px) {
+            #box {
                 width: 100%;
             }
             input,
             label,
-            textarea{
+            textarea {
                 font-size: 18px;
             }
         }
+        
+        #comment {
+            background-color: aqua;
+            width: 80%;
+            margin: 0 auto;
+            height: 120px;
+            font-size: 48px;
+            line-height: 128px;
+            border-radius: 12px;
+        }
     </style>
 </head>
+
 <body>
     <div id="container">
+        <p>版本:v1.0</p>
         <div class="title">BMI計算機</div>
-        <form action="">
+        <div id="box">
+            <!-- 後端傳遞值 -->
+            <!-- <form action=""> -->
             <label for="name">姓名</label>
-            <input type="text" name="name" id="name"><br>
+            <input type="text" name="name" id="name" placeholder="姓名"><br>
             <label for="height">身高</label>
-            <input type="number" name="height" id="height" required step="0.5"><br>
+            <input type="number" name="height" id="height" required step="0.5" placeholder="身高"><br>
             <label for="weight">體重</label>
-            <input type="number" name="weight" id="weight" required step="0.1"><br>
+            <input type="number" name="weight" id="weight" required step="0.1" placeholder="體重"><br>
             <p>
-                <button type="submit">計算</button>
+                <button type="submit" id="calc">計算</button>
             </p>
-            <a href="./index.html">回首頁</a>
-        </form>
+            <p id="comment">
+                BMI:<span class="bmi"></span>
+            </p>
+            <!-- </form> -->
+        </div>
+        <a href="./index.html">回首頁</a>
     </div>
+
+    <script src="./js/bmi.js"></script>
 </body>
+
 </html>
