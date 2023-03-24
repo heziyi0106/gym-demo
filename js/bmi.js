@@ -17,8 +17,8 @@ calcEL.innerText = "分析";
 // 將按鈕增加事件監聽[內部]
 calcEL.addEventListener("click", () => {
 
-    let name = document.querySelector("#name").value;
     let bmiEL = document.querySelector("#comment .bmi");
+    let textEl = document.querySelector("#comment .text");
     console.log(bmiEL);
     let height = heightEl.value;
     let weight = weightEl.value;
@@ -34,7 +34,7 @@ calcEL.addEventListener("click", () => {
         return;
     }
     console.log(bmi);
-    bmiEL.innerText = bmi;
+    bmiEL.innerText = ":" + bmi;
 
 
     let comments = [
@@ -42,11 +42,15 @@ calcEL.addEventListener("click", () => {
         { 'bmi': 24, 'color': 'yellow', 'comment': '正常範圍，恭喜你，請繼續保持。' },
         { 'bmi': 18.5, 'color': 'blue', 'comment': '體重過輕，請多攝取營養。' },
     ];
+    bmiEL.style.color = comments[comments.length - 1]["color"];
+    textEl.innerText = comments[comments.length - 1]["comment"];
+
 
     bmiEL.style.color = "blue";
     for (let i = 0; i < comments.length; i++) {
         if (bmi >= comments[i].bmi) {
             bmiEL.style.color = comments[i]["color"];
+            textEl.innerText = comments[i]["comment"];
             break;
         }
     }

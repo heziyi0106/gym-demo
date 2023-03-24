@@ -9,14 +9,9 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <style>
-        /* .title{
-            display: inline-block;
-            background-color: dodgerblue;
-        } */
-        
         #box {
             background-color: tomato;
-            margin-top: 24px;
+            margin-top: 12px;
             padding: 24px 0px;
             border-radius: 12px;
         }
@@ -24,6 +19,26 @@
         #box {
             width: 50%;
             margin: 24px auto;
+        }
+        
+        #comment {
+            background-color: aqua;
+            width: 80%;
+            margin: 0 auto;
+            font-size: 48px;
+            height: 200px;
+            line-height: 100px;
+            border-radius: 12px;
+        }
+        
+        .text {
+            font-size: 24px;
+        }
+        
+        @media screen and (max-width:1024px) {
+            #box {
+                width: 70%;
+            }
         }
         
         @media screen and (max-width:768px) {
@@ -35,16 +50,9 @@
             textarea {
                 font-size: 18px;
             }
-        }
-        
-        #comment {
-            background-color: aqua;
-            width: 80%;
-            margin: 0 auto;
-            height: 120px;
-            font-size: 48px;
-            line-height: 128px;
-            border-radius: 12px;
+            .text {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
@@ -59,14 +67,15 @@
             <label for="name">姓名</label>
             <input type="text" name="name" id="name" placeholder="姓名"><br>
             <label for="height">身高</label>
-            <input type="number" name="height" id="height" required step="0.5" placeholder="身高"><br>
+            <input type="text" name="height" id="height" required step="0.5" placeholder="身高"><br>
             <label for="weight">體重</label>
-            <input type="number" name="weight" id="weight" required step="0.1" placeholder="體重"><br>
+            <input type="text" name="weight" id="weight" required step="0.1" placeholder="體重"><br>
             <p>
                 <button type="submit" id="calc">計算</button>
             </p>
             <p id="comment">
-                BMI:<span class="bmi"></span>
+                BMI<span class="bmi"></span><br>
+                <span class="text"></span>
             </p>
             <!-- </form> -->
         </div>
